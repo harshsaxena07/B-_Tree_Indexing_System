@@ -52,7 +52,6 @@ void list_records_count(Node* root, string target_key, int count) {
 
                 while (root && count > 0) {
                     for (int a = i; a < root->keys.size() && count > 0; a++) {
-                        cout << "[" << root->pointers[a] << "]: ";
                         count--;
                         print_record_at_offset(root->pointers[a]);
                     }

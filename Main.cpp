@@ -132,7 +132,7 @@ void insert_record(string index_file, string initial_key) {
     long key_offset = outfile.tellp();
     initial_key = "\n" + initial_key;
 
-    cout << "Inserting \"" << initial_key << "\" at line number: " << key_offset << endl;
+    // cout << "Inserting \"" << initial_key << "\" at line number: " << key_offset << endl;
 
     outfile.write(initial_key.c_str(), initial_key.length());
     outfile.close();

@@ -21,7 +21,7 @@ class BPlusTreeApp:
         font = ('Arial', 12)
         fg_color = 'white'
         
-        # Create widgets for each function and adjust their size
+        # Create widgets for 
         tk.Label(self.root, text="Data File:", font=font, fg=fg_color, bg='black').grid(row=1, column=0, pady=10, padx=10, sticky="w")
         self.data_file_entry = tk.Entry(self.root, font=font, width=40)
         self.data_file_entry.grid(row=1, column=1, pady=10, padx=10)
@@ -55,7 +55,7 @@ class BPlusTreeApp:
         self.center_window()
 
     def center_window(self):
-        # Get screen width and height
+        # screen width and height
         screen_width = self.root.winfo_screenwidth()
         screen_height = self.root.winfo_screenheight()
 
